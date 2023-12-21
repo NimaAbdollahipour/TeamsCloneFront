@@ -1,0 +1,58 @@
+
+/* Define a custom font */
+@font-face {
+  font-family: 'poppins'; 
+  src: url('../public/Poppins-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the custom font in your styles */
+* {
+  font-family: 'poppins', sans-serif;
+}
+
+.form{
+  padding: 1rem;
+  max-width: 30rem;
+  margin: auto;
+  background-color: #fff;
+  border:none;
+  border-radius: 1rem;
+  box-shadow: #aaa 0rem 0rem 0.5rem 0.5rem;
+}
+.form h2{
+  text-align: center;
+}
+form{
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1rem;
+}
+.form button{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+body{
+  background-color: #eee;
+  padding:2rem 1rem;
+}
+input, button{
+  padding: 0.25rem;
+}
+nav{
+  display: flex;
+  gap: 1rem;
+}
+.App{
+  max-width: 1000px;
+  margin: auto;
+}
+a{
+  color: blue;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline blue;
+  text-decoration-style: dashed;
+}
